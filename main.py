@@ -1,10 +1,14 @@
 import requests
 import re
 from datetime import timedelta
-import sys
+from token_generator import generate_token
 
-access_token = 'token'
-user_login = input("Cual es el login bro: ")  # Replace this with the user you want to target
+access_token = generate_token()
+if not access_token:
+    print("Unable to generate access token. Exiting.")
+    exit()
+    
+user_login = input("Login of the Student: ")  # Replace this with the user you want to target
 url = f'https://api.intra.42.fr/v2/users/{user_login}/locations_stats'
 headers = {'Authorization': f'Bearer {access_token}'}
 
