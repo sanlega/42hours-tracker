@@ -1,8 +1,12 @@
 import requests
+import json
 
 def generate_token():
-    client_id = 'u-s4t2ud-4a351e097a5c08076de2466ff3a3c25ba5de87435fb74c9eb71c736010ad1566'
-    client_secret = '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'
+    with open('tokens.json', 'r') as file:
+        tokens = json.load(file)
+
+    client_id = tokens['client_id']
+    client_secret = tokens['client_secret']
     token_url = 'https://api.intra.42.fr/oauth/token'
 
     # Set up the request parameters
@@ -18,4 +22,3 @@ def generate_token():
     else:
         print(f'Error: {response.status_code} - {response.text}')
         return None
-
