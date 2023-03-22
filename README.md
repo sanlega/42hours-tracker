@@ -1,4 +1,4 @@
-# 42Hours Tracker
+# 42Hours Tracker ⌛
 
 42Hours Tracker is a Python script that calculates the total number of hours a student has spent at the 42 school using the 42 Intranet API. It uses the student's login name and retrieves their location statistics to determine the total time spent at the school.
 ## Prerequisites
