@@ -50,5 +50,6 @@ The repository contains the following files:
 
 We are constantly working to improve the 42Hours Tracker. In the future, we plan to:
 - Convert the script into a web application for easier access and usage.
-- Create a leaderboard to display the top users with the most hours spent at the school.
+- Create a leaderboard to display the top users with the most hours spent at the school, promoting student engagement and attendance.
+- Improve the accuracy of the tracking algorithm to cover more than just the last 4 months, providing a more comprehensive view of the student's time spent at the school.
 
