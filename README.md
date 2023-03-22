@@ -32,7 +32,7 @@ Replace `your_client_id` and `your_client_secret` with the actual values obtaine
 
 To run the script, navigate to the repository directory in your terminal and run the following command:
 
-```css
+```python
 python main.py
 ```
 
